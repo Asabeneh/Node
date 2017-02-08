@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset = "UTF-8">
+      <title>Home</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+    </head>
+
+    <body>
+{{> header}}
+<!-- <p> {{screamIt welcomeMessage}}</p> -->
+<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+ <fieldset class= "formFieldset">
+  <legend>Contact me:</legend>
+  First name: <input type="text" name="fname" size="30" required placeholder="Enter name"><br>
+  Last name: <input type="text" name="lname" size="30" required placeholder="Enter family name"><br>
+Gender:
+<select>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+
+</select><br>
+Age:<input type = "number" name = "agename" required><br>
+  Email Address: <input type="email" name="email" required placeholder="Enter a valid email address"><br>
+  Website Address: <input type="url" name="website" size = "50" required pattern="https?://.+"><br>
+Comment:<br>
+<textarea rows="4" cols="50"></textarea><br/>
+<input type="submit" value="Submit">
+<button type="reset" value="Reset">Reset</button>
+ </fieldset>
+</form>
+
+
+{{> footer}}
+  </body>
+</html>
