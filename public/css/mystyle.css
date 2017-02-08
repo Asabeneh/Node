@@ -1,5 +1,4 @@
 
-
 #bigletter{
   font-size: 180%;
   font-weight: bolder;
@@ -63,12 +62,12 @@
 
     		}
     		ul a:hover {
-    			background-color: #dff588;
-    			color: white;
+    			background-color: #dff599;
+    			color: skyblue;
     			text-decoration: none;
 
     		}
-    		ul li:active {
+    		ul li a:active {
         background-color: #dff500;
     }
 li a{

@@ -42,6 +42,7 @@ app.get('/',(req,res)=>{
   res.render('home.hbs',{
     pageTitle:'Home page',
     welcomeMessage:'Who am I?',
+    class:'active'
 
   });
 
@@ -50,6 +51,7 @@ app.get('/',(req,res)=>{
 app.get('/about',(req,res)=>{
   res.render('about.hbs',{
     pageTitle:'About Page',
+    class:'active'
 
   });
 
@@ -58,7 +60,8 @@ app.get('/about',(req,res)=>{
 app.get('/projects',(req,res)=>{
   res.render('projects.hbs',{
     pageTitle:'Project Page',
-    welcomeMessage:'Projects'
+    welcomeMessage:'Projects',
+    class:'active'
 
   });
 
@@ -67,7 +70,8 @@ app.get('/projects',(req,res)=>{
 app.get('/skills',(req,res)=>{
   res.render('skills.hbs',{
     pageTitle:'Skills Page',
-    welcomeMessage:'What are my skills?'
+    welcomeMessage:'What are my skills?',
+    class:'active'
 
   });
 
@@ -75,7 +79,8 @@ app.get('/skills',(req,res)=>{
 app.get('/contact',(req,res)=>{
   res.render('contact.hbs',{
     pageTitle:'Contact Page',
-    welcomeMessage:'Contact me'
+    welcomeMessage:'Contact me',
+    class:'active'
 
   });
 
